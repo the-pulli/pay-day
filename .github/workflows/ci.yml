@@ -1,4 +1,4 @@
-name: "PHP 8.2"
+name: "CI"
 
 on:
   push:
@@ -8,6 +8,19 @@ on:
   pull_request:
 
 jobs:
+  build-test-81:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - uses: php-actions/composer@v6
+    - name: PHPUnit Tests
+      uses: php-actions/phpunit@v3
+      with:
+        bootstrap: vendor/autoload.php
+        configuration: tests/phpunit.xml
+        php_version: "8.1"
+
   build-test-82:
     runs-on: ubuntu-latest
 

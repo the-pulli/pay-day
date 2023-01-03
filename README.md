@@ -1,7 +1,6 @@
 # PayDay
 
-![PHP 8.1](https://github.com/the-pulli/pay-day/actions/workflows/ci-81.yml/badge.svg) ![PHP 8.2](https://github.com/the-pulli/pay-day/actions/workflows/ci-82.yml/badge.svg)
-
+![CI](https://github.com/the-pulli/pay-day/actions/workflows/ci.yml/badge.svg)
 
 Provides a class PayDay\View. This class generates the pay days for the given year(s).
 
