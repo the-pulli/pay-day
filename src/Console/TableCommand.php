@@ -28,7 +28,7 @@ class TableCommand extends Command
             ->addArgument('years', InputArgument::IS_ARRAY, 'Pass the year(s). Either one by one or as range year-year. Or a mix of both.')
             ->addOption('ascii', '-a', InputOption::VALUE_NEGATABLE, 'Do you want to have a ASCII table printed?', false)
             ->addOption('columns', '-c', InputOption::VALUE_REQUIRED, 'How many years (columns) do you wanna display in one table?', 10)
-            ->addOption('dayname', '-e', InputOption::VALUE_NEGATABLE, 'Do you want see the day name?', false)
+            ->addOption('dayname', '-e', InputOption::VALUE_NEGATABLE, 'Do you want see the day name?', true)
             ->addOption('duplicates', '-d', InputOption::VALUE_NEGATABLE, 'Do you want see duplicates?', false)
             ->addOption('footer', '-f', InputOption::VALUE_NEGATABLE, 'Do you want see the table footer?', true)
             ->addOption('separator', '-s', InputOption::VALUE_NEGATABLE, 'Do you want to have a separator for the rows printed?', true)
